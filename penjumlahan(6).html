@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="bil1">Bilangan 1: </label>
+    <input type="text" id="bil1"><br><br>
+    
+    <label for="bil2">Bilangan 2: </label>
+    <input type="text" id="bil2"><br><br>
+
+    <label for="hasil">Hasilnya adalah: </label>
+    <input type="text" id="hasil"><br><br>
+
+    <input type="submit" onclick="penjumlahan()" value="Jumlahkan"><br><br>
+    <a href="dashboard(4).html">Keluar</a>
+    
+    
+    <script>
+        function penjumlahan(){
+            let bil1 = document.getElementById("bil1").value;
+            let bil2 = document.getElementById("bil2").value;
+    
+            let hasil = parseInt(bil1) + parseInt(bil2);
+            
+            document.getElementById("hasil").value = hasil;
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "text");
+
+            var parent = document.getElementsByTagName("body");
+            parent.appendChild(input);
+        }
+            </script>
+
+</body>
+</html>
